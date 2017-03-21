@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+<head>
+	<meta charset="utf-8">
+	<title>go Record</title>
+	<script src="angular/angular.min.js" charset="utf-8"></script>
+    <script src="angular-route/angular-route.min.js" charset="utf-8"></script>
+	<script src="angular-cookies/angular-cookies.js" charset="utf-8"></script>
+	<script src="assets/app.js" charset="utf-8"></script>
+    <script src="assets/controllers/logRegController.js" charset="utf-8"></script>
+    <script src="assets/factories/userFactory.js" charset="utf-8"></script>
+</head>
+<body>
+<h1>Hello World</h1>
+	<div class="container">
+		<div ng-view=""></div>
+	</div>
+	<div class="test">
+		<audio controls>
+		  <source src="http://localhost:8000/featured" type="audio/ogg">
+		</audio>
+
+
+		<h1>Upload Song</h1>
+		<form action="http://localhost:8000/uploadSong" method="POST" enctype="multipart/form-data">
+		<label>Email:</label>
+		  <input type="text" name="email">
+		  <label>Song File</label>
+		  <input type="file" name="songFile">
+		  <label>Image File</label>
+		  <input type="file" name="imageFile">
+		  <input type="submit">
+		</form>
+	</div>
+
+</body>
+</html>

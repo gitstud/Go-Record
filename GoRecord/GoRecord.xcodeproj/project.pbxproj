@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70C93006415591F33567631A /* Pods_GoRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA600E76987D3A4CF9521827 /* Pods_GoRecord.framework */; };
+		CF3FD7801E59B44000AA32EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3FD77F1E59B44000AA32EE /* AppDelegate.swift */; };
+		CF3FD7821E59B44000AA32EE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3FD7811E59B44000AA32EE /* MainViewController.swift */; };
+		CF3FD7851E59B44000AA32EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3FD7831E59B44000AA32EE /* Main.storyboard */; };
+		CF3FD7881E59B44000AA32EE /* GoRecord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF3FD7861E59B44000AA32EE /* GoRecord.xcdatamodeld */; };
+		CF3FD78A1E59B44000AA32EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3FD7891E59B44000AA32EE /* Assets.xcassets */; };
+		CF3FD78D1E59B44000AA32EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3FD78B1E59B44000AA32EE /* LaunchScreen.storyboard */; };
+		CF3FD7981E59B44000AA32EE /* GoRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3FD7971E59B44000AA32EE /* GoRecordTests.swift */; };
+		CF3FD7A31E59B44000AA32EE /* GoRecordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3FD7A21E59B44000AA32EE /* GoRecordUITests.swift */; };
+		CF3FD7B11E59BB5600AA32EE /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3FD7B01E59BB5600AA32EE /* registerViewController.swift */; };
+		CF3FD7B31E59BEED00AA32EE /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3FD7B21E59BEED00AA32EE /* homeViewController.swift */; };
+		CF3FD7B51E5AB71900AA32EE /* songCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3FD7B41E5AB71900AA32EE /* songCell.swift */; };
+		CF3FD7B71E5AB7E900AA32EE /* featuredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3FD7B61E5AB7E900AA32EE /* featuredViewController.swift */; };
+		CFA6D4271E6789020027FB79 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6D4261E6789020027FB79 /* MenuViewController.swift */; };
+		CFA6E9B21E67B5280070C5AA /* menuCelllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9B11E67B5280070C5AA /* menuCelllController.swift */; };
+		CFA6E9B61E67DAF90070C5AA /* profileSongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9B51E67DAF90070C5AA /* profileSongCell.swift */; };
+		CFA6E9B81E67F00C0070C5AA /* favoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9B71E67F00C0070C5AA /* favoritesViewController.swift */; };
+		CFA6E9BA1E67F08C0070C5AA /* favoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9B91E67F08C0070C5AA /* favoriteCell.swift */; };
+		CFA6E9BC1E680E0A0070C5AA /* followingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9BB1E680E090070C5AA /* followingViewController.swift */; };
+		CFA6E9BE1E68115F0070C5AA /* followerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9BD1E68115F0070C5AA /* followerCell.swift */; };
+		CFA6E9C01E68BBCE0070C5AA /* recordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9BF1E68BBCE0070C5AA /* recordingViewController.swift */; };
+		CFA6E9C21E68E71C0070C5AA /* SpectralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9C11E68E71C0070C5AA /* SpectralView.swift */; };
+		CFA6E9C81E68E8350070C5AA /* SpectralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9C31E68E8350070C5AA /* SpectralViewController.swift */; };
+		CFA6E9C91E68E8350070C5AA /* TempiAudioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9C41E68E8350070C5AA /* TempiAudioInput.swift */; };
+		CFA6E9CA1E68E8350070C5AA /* TempiDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9C51E68E8350070C5AA /* TempiDebug.swift */; };
+		CFA6E9CB1E68E8350070C5AA /* TempiFFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9C61E68E8350070C5AA /* TempiFFT.swift */; };
+		CFA6E9CC1E68E8350070C5AA /* TempiUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9C71E68E8350070C5AA /* TempiUtilities.swift */; };
+		CFA6E9CE1E69F6CA0070C5AA /* savingRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9CD1E69F6CA0070C5AA /* savingRecordingViewController.swift */; };
+		CFA6E9D01E69FEA80070C5AA /* addImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA6E9CF1E69FEA80070C5AA /* addImageDelegate.swift */; };
+		CFAE1E631E64E048003D6280 /* SongStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE1E621E64E048003D6280 /* SongStruct.swift */; };
+		CFAE1E651E674843003D6280 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE1E641E674843003D6280 /* profileViewController.swift */; };
+		CFE814B81E5BA8BF00696B94 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814B71E5BA8BF00696B94 /* searchViewController.swift */; };
+		CFE814FD1E62C8CA00696B94 /* songViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814FC1E62C8CA00696B94 /* songViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF3FD7941E59B44000AA32EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF3FD7741E59B44000AA32EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF3FD77B1E59B44000AA32EE;
+			remoteInfo = GoRecord;
+		};
+		CF3FD79F1E59B44000AA32EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF3FD7741E59B44000AA32EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF3FD77B1E59B44000AA32EE;
+			remoteInfo = GoRecord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E367CFE92B459E0F78C5834 /* Pods-GoRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoRecord/Pods-GoRecord.debug.xcconfig"; sourceTree = "<group>"; };
+		413231E443317047DF0AF605 /* Pods-GoRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoRecord/Pods-GoRecord.release.xcconfig"; sourceTree = "<group>"; };
+		CF3FD77C1E59B44000AA32EE /* GoRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3FD77F1E59B44000AA32EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF3FD7811E59B44000AA32EE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CF3FD7841E59B44000AA32EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF3FD7871E59B44000AA32EE /* GoRecord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoRecord.xcdatamodel; sourceTree = "<group>"; };
+		CF3FD7891E59B44000AA32EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF3FD78C1E59B44000AA32EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF3FD78E1E59B44000AA32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3FD7931E59B44000AA32EE /* GoRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3FD7971E59B44000AA32EE /* GoRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoRecordTests.swift; sourceTree = "<group>"; };
+		CF3FD7991E59B44000AA32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3FD79E1E59B44000AA32EE /* GoRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF3FD7A21E59B44000AA32EE /* GoRecordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoRecordUITests.swift; sourceTree = "<group>"; };
+		CF3FD7A41E59B44000AA32EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3FD7B01E59BB5600AA32EE /* registerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		CF3FD7B21E59BEED00AA32EE /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		CF3FD7B41E5AB71900AA32EE /* songCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = songCell.swift; sourceTree = "<group>"; };
+		CF3FD7B61E5AB7E900AA32EE /* featuredViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = featuredViewController.swift; sourceTree = "<group>"; };
+		CFA6D4261E6789020027FB79 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CFA6E9B11E67B5280070C5AA /* menuCelllController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuCelllController.swift; sourceTree = "<group>"; };
+		CFA6E9B51E67DAF90070C5AA /* profileSongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileSongCell.swift; sourceTree = "<group>"; };
+		CFA6E9B71E67F00C0070C5AA /* favoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = favoritesViewController.swift; sourceTree = "<group>"; };
+		CFA6E9B91E67F08C0070C5AA /* favoriteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = favoriteCell.swift; sourceTree = "<group>"; };
+		CFA6E9BB1E680E090070C5AA /* followingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = followingViewController.swift; sourceTree = "<group>"; };
+		CFA6E9BD1E68115F0070C5AA /* followerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = followerCell.swift; sourceTree = "<group>"; };
+		CFA6E9BF1E68BBCE0070C5AA /* recordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recordingViewController.swift; sourceTree = "<group>"; };
+		CFA6E9C11E68E71C0070C5AA /* SpectralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpectralView.swift; sourceTree = "<group>"; };
+		CFA6E9C31E68E8350070C5AA /* SpectralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpectralViewController.swift; sourceTree = "<group>"; };
+		CFA6E9C41E68E8350070C5AA /* TempiAudioInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiAudioInput.swift; sourceTree = "<group>"; };
+		CFA6E9C51E68E8350070C5AA /* TempiDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiDebug.swift; sourceTree = "<group>"; };
+		CFA6E9C61E68E8350070C5AA /* TempiFFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiFFT.swift; sourceTree = "<group>"; };
+		CFA6E9C71E68E8350070C5AA /* TempiUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiUtilities.swift; sourceTree = "<group>"; };
+		CFA6E9CD1E69F6CA0070C5AA /* savingRecordingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = savingRecordingViewController.swift; sourceTree = "<group>"; };
+		CFA6E9CF1E69FEA80070C5AA /* addImageDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addImageDelegate.swift; sourceTree = "<group>"; };
+		CFAE1E621E64E048003D6280 /* SongStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongStruct.swift; sourceTree = "<group>"; };
+		CFAE1E641E674843003D6280 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		CFE814B71E5BA8BF00696B94 /* searchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		CFE814FC1E62C8CA00696B94 /* songViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = songViewController.swift; sourceTree = "<group>"; };
+		FA600E76987D3A4CF9521827 /* Pods_GoRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF3FD7791E59B44000AA32EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C93006415591F33567631A /* Pods_GoRecord.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3FD7901E59B44000AA32EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3FD79B1E59B44000AA32EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A3097CDA5389E964E31C7AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA600E76987D3A4CF9521827 /* Pods_GoRecord.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4126E71243F0A76CA5FD01C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E367CFE92B459E0F78C5834 /* Pods-GoRecord.debug.xcconfig */,
+				413231E443317047DF0AF605 /* Pods-GoRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF3FD7731E59B44000AA32EE = {
+			isa = PBXGroup;
+			children = (
+				CF3FD77E1E59B44000AA32EE /* GoRecord */,
+				CF3FD7961E59B44000AA32EE /* GoRecordTests */,
+				CF3FD7A11E59B44000AA32EE /* GoRecordUITests */,
+				CF3FD77D1E59B44000AA32EE /* Products */,
+				4126E71243F0A76CA5FD01C3 /* Pods */,
+				1A3097CDA5389E964E31C7AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF3FD77D1E59B44000AA32EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF3FD77C1E59B44000AA32EE /* GoRecord.app */,
+				CF3FD7931E59B44000AA32EE /* GoRecordTests.xctest */,
+				CF3FD79E1E59B44000AA32EE /* GoRecordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF3FD77E1E59B44000AA32EE /* GoRecord */ = {
+			isa = PBXGroup;
+			children = (
+				CF3FD7831E59B44000AA32EE /* Main.storyboard */,
+				CF3FD77F1E59B44000AA32EE /* AppDelegate.swift */,
+				CF3FD7B01E59BB5600AA32EE /* registerViewController.swift */,
+				CF3FD7811E59B44000AA32EE /* MainViewController.swift */,
+				CFA6D4261E6789020027FB79 /* MenuViewController.swift */,
+				CF3FD7B21E59BEED00AA32EE /* homeViewController.swift */,
+				CFE814B71E5BA8BF00696B94 /* searchViewController.swift */,
+				CFE814FC1E62C8CA00696B94 /* songViewController.swift */,
+				CF3FD7B61E5AB7E900AA32EE /* featuredViewController.swift */,
+				CFAE1E641E674843003D6280 /* profileViewController.swift */,
+				CFA6E9B51E67DAF90070C5AA /* profileSongCell.swift */,
+				CF3FD7B41E5AB71900AA32EE /* songCell.swift */,
+				CFA6E9B11E67B5280070C5AA /* menuCelllController.swift */,
+				CFAE1E621E64E048003D6280 /* SongStruct.swift */,
+				CF3FD7891E59B44000AA32EE /* Assets.xcassets */,
+				CF3FD78B1E59B44000AA32EE /* LaunchScreen.storyboard */,
+				CF3FD7861E59B44000AA32EE /* GoRecord.xcdatamodeld */,
+				CF3FD78E1E59B44000AA32EE /* Info.plist */,
+				CFA6E9B71E67F00C0070C5AA /* favoritesViewController.swift */,
+				CFA6E9B91E67F08C0070C5AA /* favoriteCell.swift */,
+				CFA6E9BB1E680E090070C5AA /* followingViewController.swift */,
+				CFA6E9BD1E68115F0070C5AA /* followerCell.swift */,
+				CFA6E9BF1E68BBCE0070C5AA /* recordingViewController.swift */,
+				CFA6E9C11E68E71C0070C5AA /* SpectralView.swift */,
+				CFA6E9C31E68E8350070C5AA /* SpectralViewController.swift */,
+				CFA6E9C41E68E8350070C5AA /* TempiAudioInput.swift */,
+				CFA6E9C51E68E8350070C5AA /* TempiDebug.swift */,
+				CFA6E9C61E68E8350070C5AA /* TempiFFT.swift */,
+				CFA6E9C71E68E8350070C5AA /* TempiUtilities.swift */,
+				CFA6E9CD1E69F6CA0070C5AA /* savingRecordingViewController.swift */,
+				CFA6E9CF1E69FEA80070C5AA /* addImageDelegate.swift */,
+			);
+			path = GoRecord;
+			sourceTree = "<group>";
+		};
+		CF3FD7961E59B44000AA32EE /* GoRecordTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF3FD7971E59B44000AA32EE /* GoRecordTests.swift */,
+				CF3FD7991E59B44000AA32EE /* Info.plist */,
+			);
+			path = GoRecordTests;
+			sourceTree = "<group>";
+		};
+		CF3FD7A11E59B44000AA32EE /* GoRecordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF3FD7A21E59B44000AA32EE /* GoRecordUITests.swift */,
+				CF3FD7A41E59B44000AA32EE /* Info.plist */,
+			);
+			path = GoRecordUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF3FD77B1E59B44000AA32EE /* GoRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3FD7A71E59B44000AA32EE /* Build configuration list for PBXNativeTarget "GoRecord" */;
+			buildPhases = (
+				200903FF3266C662E70DC11C /* [CP] Check Pods Manifest.lock */,
+				CF3FD7781E59B44000AA32EE /* Sources */,
+				CF3FD7791E59B44000AA32EE /* Frameworks */,
+				CF3FD77A1E59B44000AA32EE /* Resources */,
+				8246C62C5FBA55513B9CB247 /* [CP] Embed Pods Frameworks */,
+				FDF7D878B896C94DCF8AE223 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoRecord;
+			productName = GoRecord;
+			productReference = CF3FD77C1E59B44000AA32EE /* GoRecord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF3FD7921E59B44000AA32EE /* GoRecordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3FD7AA1E59B44000AA32EE /* Build configuration list for PBXNativeTarget "GoRecordTests" */;
+			buildPhases = (
+				CF3FD78F1E59B44000AA32EE /* Sources */,
+				CF3FD7901E59B44000AA32EE /* Frameworks */,
+				CF3FD7911E59B44000AA32EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF3FD7951E59B44000AA32EE /* PBXTargetDependency */,
+			);
+			name = GoRecordTests;
+			productName = GoRecordTests;
+			productReference = CF3FD7931E59B44000AA32EE /* GoRecordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF3FD79D1E59B44000AA32EE /* GoRecordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF3FD7AD1E59B44000AA32EE /* Build configuration list for PBXNativeTarget "GoRecordUITests" */;
+			buildPhases = (
+				CF3FD79A1E59B44000AA32EE /* Sources */,
+				CF3FD79B1E59B44000AA32EE /* Frameworks */,
+				CF3FD79C1E59B44000AA32EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF3FD7A01E59B44000AA32EE /* PBXTargetDependency */,
+			);
+			name = GoRecordUITests;
+			productName = GoRecordUITests;
+			productReference = CF3FD79E1E59B44000AA32EE /* GoRecordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF3FD7741E59B44000AA32EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Max Nelson";
+				TargetAttributes = {
+					CF3FD77B1E59B44000AA32EE = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZM76AV859P;
+						ProvisioningStyle = Automatic;
+					};
+					CF3FD7921E59B44000AA32EE = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZM76AV859P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF3FD77B1E59B44000AA32EE;
+					};
+					CF3FD79D1E59B44000AA32EE = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZM76AV859P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF3FD77B1E59B44000AA32EE;
+					};
+				};
+			};
+			buildConfigurationList = CF3FD7771E59B44000AA32EE /* Build configuration list for PBXProject "GoRecord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF3FD7731E59B44000AA32EE;
+			productRefGroup = CF3FD77D1E59B44000AA32EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF3FD77B1E59B44000AA32EE /* GoRecord */,
+				CF3FD7921E59B44000AA32EE /* GoRecordTests */,
+				CF3FD79D1E59B44000AA32EE /* GoRecordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF3FD77A1E59B44000AA32EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3FD78D1E59B44000AA32EE /* LaunchScreen.storyboard in Resources */,
+				CF3FD78A1E59B44000AA32EE /* Assets.xcassets in Resources */,
+				CF3FD7851E59B44000AA32EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3FD7911E59B44000AA32EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3FD79C1E59B44000AA32EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		200903FF3266C662E70DC11C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8246C62C5FBA55513B9CB247 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoRecord/Pods-GoRecord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDF7D878B896C94DCF8AE223 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoRecord/Pods-GoRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF3FD7781E59B44000AA32EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA6E9D01E69FEA80070C5AA /* addImageDelegate.swift in Sources */,
+				CF3FD7B51E5AB71900AA32EE /* songCell.swift in Sources */,
+				CFAE1E631E64E048003D6280 /* SongStruct.swift in Sources */,
+				CFA6E9C21E68E71C0070C5AA /* SpectralView.swift in Sources */,
+				CFA6E9CA1E68E8350070C5AA /* TempiDebug.swift in Sources */,
+				CF3FD7821E59B44000AA32EE /* MainViewController.swift in Sources */,
+				CFE814FD1E62C8CA00696B94 /* songViewController.swift in Sources */,
+				CFA6E9B21E67B5280070C5AA /* menuCelllController.swift in Sources */,
+				CFE814B81E5BA8BF00696B94 /* searchViewController.swift in Sources */,
+				CFA6E9B61E67DAF90070C5AA /* profileSongCell.swift in Sources */,
+				CF3FD7B71E5AB7E900AA32EE /* featuredViewController.swift in Sources */,
+				CFA6E9BC1E680E0A0070C5AA /* followingViewController.swift in Sources */,
+				CFA6D4271E6789020027FB79 /* MenuViewController.swift in Sources */,
+				CFA6E9C01E68BBCE0070C5AA /* recordingViewController.swift in Sources */,
+				CFA6E9B81E67F00C0070C5AA /* favoritesViewController.swift in Sources */,
+				CFA6E9C81E68E8350070C5AA /* SpectralViewController.swift in Sources */,
+				CFAE1E651E674843003D6280 /* profileViewController.swift in Sources */,
+				CFA6E9CB1E68E8350070C5AA /* TempiFFT.swift in Sources */,
+				CFA6E9C91E68E8350070C5AA /* TempiAudioInput.swift in Sources */,
+				CF3FD7801E59B44000AA32EE /* AppDelegate.swift in Sources */,
+				CF3FD7881E59B44000AA32EE /* GoRecord.xcdatamodeld in Sources */,
+				CFA6E9BA1E67F08C0070C5AA /* favoriteCell.swift in Sources */,
+				CF3FD7B31E59BEED00AA32EE /* homeViewController.swift in Sources */,
+				CFA6E9CE1E69F6CA0070C5AA /* savingRecordingViewController.swift in Sources */,
+				CFA6E9CC1E68E8350070C5AA /* TempiUtilities.swift in Sources */,
+				CF3FD7B11E59BB5600AA32EE /* registerViewController.swift in Sources */,
+				CFA6E9BE1E68115F0070C5AA /* followerCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3FD78F1E59B44000AA32EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3FD7981E59B44000AA32EE /* GoRecordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF3FD79A1E59B44000AA32EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3FD7A31E59B44000AA32EE /* GoRecordUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF3FD7951E59B44000AA32EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF3FD77B1E59B44000AA32EE /* GoRecord */;
+			targetProxy = CF3FD7941E59B44000AA32EE /* PBXContainerItemProxy */;
+		};
+		CF3FD7A01E59B44000AA32EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF3FD77B1E59B44000AA32EE /* GoRecord */;
+			targetProxy = CF3FD79F1E59B44000AA32EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF3FD7831E59B44000AA32EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF3FD7841E59B44000AA32EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF3FD78B1E59B44000AA32EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF3FD78C1E59B44000AA32EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF3FD7A51E59B44000AA32EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF3FD7A61E59B44000AA32EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF3FD7A81E59B44000AA32EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E367CFE92B459E0F78C5834 /* Pods-GoRecord.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZM76AV859P;
+				INFOPLIST_FILE = GoRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dig.GoRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CF3FD7A91E59B44000AA32EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 413231E443317047DF0AF605 /* Pods-GoRecord.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZM76AV859P;
+				INFOPLIST_FILE = GoRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dig.GoRecord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CF3FD7AB1E59B44000AA32EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZM76AV859P;
+				INFOPLIST_FILE = GoRecordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dig.GoRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoRecord.app/GoRecord";
+			};
+			name = Debug;
+		};
+		CF3FD7AC1E59B44000AA32EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZM76AV859P;
+				INFOPLIST_FILE = GoRecordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dig.GoRecordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoRecord.app/GoRecord";
+			};
+			name = Release;
+		};
+		CF3FD7AE1E59B44000AA32EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZM76AV859P;
+				INFOPLIST_FILE = GoRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dig.GoRecordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GoRecord;
+			};
+			name = Debug;
+		};
+		CF3FD7AF1E59B44000AA32EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = ZM76AV859P;
+				INFOPLIST_FILE = GoRecordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dig.GoRecordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GoRecord;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF3FD7771E59B44000AA32EE /* Build configuration list for PBXProject "GoRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3FD7A51E59B44000AA32EE /* Debug */,
+				CF3FD7A61E59B44000AA32EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF3FD7A71E59B44000AA32EE /* Build configuration list for PBXNativeTarget "GoRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3FD7A81E59B44000AA32EE /* Debug */,
+				CF3FD7A91E59B44000AA32EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF3FD7AA1E59B44000AA32EE /* Build configuration list for PBXNativeTarget "GoRecordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3FD7AB1E59B44000AA32EE /* Debug */,
+				CF3FD7AC1E59B44000AA32EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF3FD7AD1E59B44000AA32EE /* Build configuration list for PBXNativeTarget "GoRecordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF3FD7AE1E59B44000AA32EE /* Debug */,
+				CF3FD7AF1E59B44000AA32EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CF3FD7861E59B44000AA32EE /* GoRecord.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF3FD7871E59B44000AA32EE /* GoRecord.xcdatamodel */,
+			);
+			currentVersion = CF3FD7871E59B44000AA32EE /* GoRecord.xcdatamodel */;
+			path = GoRecord.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF3FD7741E59B44000AA32EE /* Project object */;
+}
